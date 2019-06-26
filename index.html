@@ -23,23 +23,28 @@
 
 </nav>
 
-<div class="jumbotron text-center">
-<img class="logo" src="_Imagens/logo.jpg"> <br><br>
 
-<form id="FormLogin">
-<label> E-mail </label>
-<input type="email" id="InputEmail" placeholder="E-mail">
-<br>
-<br>
-<label> Senha </label>
-<input type="password" id="InputSenha" placeholder="Senha">
-<br>
-<br>
-<input id="BtnLogin" type="submit" value="Entrar">
-<button action="Cadastrar.php"> Não sou Cadastrado </button>
+<img class="logo" src="_Imagens/logo.jpg">
 
-</div>
-
+<form class="jumbotron text-center">
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-4">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-4">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password"><br>
+	  <button onclick="Login.php" type="button" class="btn btn-dark"> Entrar </button>
+	  <button onclick="Cadastro.php" type="button" class="btn btn-dark"> Não sou Cadastrado </button>
+    </div>
+	
+  </div>
+  
+  
+ 
 </form>
 </body>
 </html>
