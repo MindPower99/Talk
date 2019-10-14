@@ -15,7 +15,7 @@ function CriaRequest() {
              }
          }
      }
-     
+
       if (!request) 
          alert("Seu Navegador não suporta Ajax!");
      else
@@ -39,11 +39,12 @@ $('#btnLogin').click (function () {
          // Verifica se foi concluído com sucesso e a conexão fechada (readyState=4)
          if (xmlreq.readyState == 4) {
               
+              console.log("chegou");
              // Verifica se o arquivo foi encontrado com sucesso
              if (xmlreq.status == 200) {
-                 result.innerHTML = xmlreq.responseText;
+                 console.log(xmlreq.responseText);
              }else{
-                 result.innerHTML = "Erro: " + xmlreq.statusText;
+                 console.log(xmlreq.statusText);
              }
          }
      };
