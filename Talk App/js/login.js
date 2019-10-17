@@ -102,7 +102,7 @@ $('#btnLogin').click (function () {
             success: function (result){         //Sucesso no AJAX
                         alert(result);
                         if(result==1){                      
-                            location.href='http://127.0.0.1/restrito.php' 
+                            location.href='inicio.html' 
                             console.log( "passou");
                         }else{
                             $('#errolog').show();   
