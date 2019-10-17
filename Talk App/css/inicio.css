@@ -88,6 +88,10 @@ body {
     padding-left: 300px;
   }
 }
+
+@media(max-width: 800px) {
+	
+}
 /*----------------show sidebar button----------------*/
 #show-sidebar {
   position: fixed;
@@ -122,7 +126,7 @@ body {
   text-decoration: none;
 }
 
-innerWid
+
 
 
 

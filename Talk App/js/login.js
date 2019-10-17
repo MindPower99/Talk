@@ -95,6 +95,7 @@ $('#btnLogin').click (function () {
 
         console.log(login);
         console.log(senha);
+		
         $.ajax({            //Função AJAX
             url:"http://127.0.0.1/login.php",            //Arquivo php
             type:"POST",                //Método de envio
