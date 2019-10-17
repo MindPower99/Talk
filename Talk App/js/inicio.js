@@ -26,3 +26,6 @@ $("#close-sidebar").click(function() {
 $("#show-sidebar").click(function() {
   $(".page-wrapper").addClass("toggled");
 });
+
+var p;
+console.log($(document).innerWidth());
