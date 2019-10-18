@@ -28,7 +28,11 @@
         </div>
         <div class="user-info">
           <span class="user-name">
-            <strong>Gabriel Jorge</strong>
+            <strong><script> 
+              $(document).ready(function () {
+                $.post('listarusuario.php', function(retorna));
+              })
+              </script></strong>
           </span>
           <span class="user-role">Administrator</span>
           <span class="user-status">
