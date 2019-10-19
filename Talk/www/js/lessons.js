@@ -1,4 +1,5 @@
 function next_content() {
 	console.log("eae");
-	 $(window.document.location).attr('href',"container-fluid c2");
+	var div = $('.c2');
+	$('.container-fluid').html(div);
 }
