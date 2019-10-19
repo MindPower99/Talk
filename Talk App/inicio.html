@@ -6,6 +6,7 @@
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
 	<link rel="stylesheet" type="text/css" href="css/inicio.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -27,12 +28,18 @@
             alt="User picture">
         </div>
         <div class="user-info">
-          <span class="user-name">
-            <strong><script> 
-              $(document).ready(function () {
-                $.post('listarusuario.php', function(retorna));
-              })
-              </script></strong>
+          <span id="conteudo_nome" class="user-name">
+            <strong> <h1>
+            	<script> 
+              	$(document).ready(function () {
+                	$.post('http://127.0.0.1/Listarusuario.php', function(retorna) {
+                		$("#conteudo_nome").html(retorna);
+              		});
+            	});
+
+             	 </script>
+             	 </h1>
+          	</strong>
           </span>
           <span class="user-role">Administrator</span>
           <span class="user-status">

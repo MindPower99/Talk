@@ -131,9 +131,45 @@ body {
     width: 400px;
     display: block;
     font-size: 1.9rem;
+    
+  }
+  .form-control {
+    font-size: 2rem;
+  }
+  
+  .header-menu span {
+    font-size: 1.9rem;
   }
 
-  
+  body {
+    line-height: 2.9rem;
+  }
+
+  .sidebar-menu {
+    font-size: 1.9rem;
+  }
+
+  .sidebar-wrapper .sidebar-content .sidebar-header .user-info span {
+    font-size: 1.4rem;
+  }
+
+  #conteudo_nome {
+    font-size: 1.9rem;
+  }
+
+  .sidebar-wrapper .sidebar-content .sidebar-header .user-pic  {
+    width: 140px;
+  }
+  .sidebar-wrapper .sidebar-content .sidebar-header .user-info {
+    padding-left: 20px;
+  }
+
+  .sidebar-wrapper .sidebar-menu ul .header-menu span {
+    font-size: 2.0rem;
+  }
+  .sidebar-submenu ul li a {
+    font-size: 1.5rem;
+  }
 }
 
 
