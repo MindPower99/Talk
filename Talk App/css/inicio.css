@@ -422,6 +422,18 @@ body {
   overflow-x: hidden;
 }
 
+.card:hover {
+	background:	#C0C0C0;
+	cursor: pointer;
+}
+.card-img-top:hover {
+	-webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+	transition: .3s ease;
+}
+
+
+
 /*------scroll bar---------------------*/
 
 ::-webkit-scrollbar {
