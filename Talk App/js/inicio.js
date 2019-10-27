@@ -29,3 +29,13 @@ $("#show-sidebar").click(function() {
 
 var p;
 console.log($(document).innerWidth());
+
+$("#Every_dialogues").click(function() {
+  console.log("passou");
+  $(window.document.location).attr('href',"index.html");
+});
+
+$("#Famous_people").click(function() {
+  console.log("passou");
+  $(window.document.location).attr('href',"index.html");
+});
