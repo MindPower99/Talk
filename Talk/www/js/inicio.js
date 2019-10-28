@@ -32,7 +32,7 @@ console.log($(document).innerWidth());
 
 $("#Every_dialogues").click(function() {
   console.log("passou");
-  $(window.document.location).attr('href',"index.html");
+  $(window.document.location).attr('href',"Every_dialogues.html");
 });
 
 $("#Famous_people").click(function() {
