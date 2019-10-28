@@ -13,7 +13,7 @@ $(".sidebar-dropdown > a").click(function() {
     $(".sidebar-dropdown").removeClass("active");
     $(this)
       .next(".sidebar-submenu")
-      .slideDown(200);
+      .slideDown(500);
     $(this)
       .parent()
       .addClass("active");
