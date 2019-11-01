@@ -13,7 +13,7 @@
             type:"POST",                //Método de envio
             data: "login="+login+"&senha="+senha,   //Dados
             success: function (result){         //Sucesso no AJAX
-                        alert(result);
+                        //alert(result);
                         if(result==1){                      
                             location.href='inicio.html' 
                             console.log( "passou");

@@ -13,7 +13,7 @@ $(".sidebar-dropdown > a").click(function() {
     $(".sidebar-dropdown").removeClass("active");
     $(this)
       .next(".sidebar-submenu")
-      .slideDown(200);
+      .slideDown(500);
     $(this)
       .parent()
       .addClass("active");
@@ -32,7 +32,7 @@ console.log($(document).innerWidth());
 
 $("#Every_dialogues").click(function() {
   console.log("passou");
-  $(window.document.location).attr('href',"index.html");
+  $(window.document.location).attr('href',"Every_dialogues.html");
 });
 
 $("#Famous_people").click(function() {

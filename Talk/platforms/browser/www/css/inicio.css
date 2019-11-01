@@ -170,8 +170,7 @@ body {
   }
 .page-wrapper.toggled .sidebar-wrapper {
   left: 0px;
-}
-
+  }
 
   .sidebar-wrapper {
   width: 330px;
@@ -181,7 +180,8 @@ body {
   top: 0;
   left: -330px;
   z-index: 999;
-}
+  }
+
 
 
 }
