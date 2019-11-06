@@ -1,31 +1,31 @@
-.button_slide a{
-  color: black;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 0px;
-  padding: 18px 36px;
-  display: inline-block;
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 14px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 #2F4F4F;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-  text-decoration: none;
-}
-
-.slide_right:hover a:hover{
-  box-shadow: inset 400px 0 0 0 #2F4F4F;
-  color: white;
-  font-style: bold;
-  border: none;
-}
-
-
-
-#outer {
-  width: 364px;
-  margin: 50px auto 0 auto;
-  text-align: center;
-}
+.button_letsgo {
+   border-top: 1px solid #525354;
+   background: #525354;
+   background: -webkit-gradient(linear, left top, left bottom, from(#c3d5e8), to(#525354));
+   background: -webkit-linear-gradient(top, #c3d5e8, #525354);
+   background: -moz-linear-gradient(top, #c3d5e8, #525354);
+   background: -ms-linear-gradient(top, #c3d5e8, #525354);
+   background: -o-linear-gradient(top, #c3d5e8, #525354);
+   padding: 20px 40px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #000000;
+   font-size: 24px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button_letsgo:hover {
+   border-top-color: #011426;
+   background: #011426;
+   color: #ccc;
+   }
+.button_letsgo:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
