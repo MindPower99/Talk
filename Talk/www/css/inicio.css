@@ -237,6 +237,9 @@ body {
   margin-right: 15px;
   overflow: hidden;
 }
+.user-pic:hover {
+	cursor: pointer;
+}
 
 .sidebar-wrapper .sidebar-header .user-pic img {
   object-fit: cover;

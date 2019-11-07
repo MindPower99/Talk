@@ -6,7 +6,9 @@
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
 	<link rel="stylesheet" type="text/css" href="css/inicio.css">
+	<link rel="stylesheet" type="text/css" href="css/perfil_user.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/lessons.js"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -23,7 +25,6 @@
         </div>
       </div>
       <div class="sidebar-header">
-
         <div class="user-pic">
           <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
             alt="User picture">
@@ -35,8 +36,11 @@
               	$(document).ready(function () {
                 	$.post('http://127.0.0.1/Listarusuario.php', function(retorna) {
                 		$("#conteudo_nome").html(retorna);
+						
               		});
             	});
+				
+				
 
              	 </script>
              
@@ -77,12 +81,12 @@
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="Every_dialogues.html">Every Dialogues
+                  <a href="Every_Dialogues.html">Every_Dialogues
                     <span class="badge badge-pill badge-success">Pro</span>
                   </a>
                 </li>
                 <li>
-                  <a href="Famous_people.html">Famous people</a>
+                  <a href="Famous_people.html"> Famous_people </a>
                 </li>
                 <li>
                   <a href="#">Lesson 3</a>
@@ -116,34 +120,7 @@
 			
 			
           </li>
-		  
-		  <!--
-          <li class="sidebar-dropdown">
-            <a href="#">
-              <i class="far fa-gem"></i>
-              <span>Components</span>
-            </a>
-            <div class="sidebar-submenu">
-              <ul>
-                <li>
-                  <a href="#">General</a>
-                </li>
-                <li>
-                  <a href="#">Panels</a>
-                </li>
-                <li>
-                  <a href="#">Tables</a>
-                </li>
-                <li>
-                  <a href="#">Icons</a>
-                </li>
-                <li>
-                  <a href="#">Forms</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-		  -->
+
           <li class="sidebar-dropdown">
             <a href="#">
               <i class="fa fa-globe"></i>
@@ -166,26 +143,7 @@
               </ul>
             </div>
           </li>
-		  
-		  <!--
-          <li class="sidebar-dropdown">
-            <a href="#">
-              <i class="fa fa-globe"></i>
-              <span>Maps</span>
-            </a>
-            <div class="sidebar-submenu">
-              <ul>
-                <li>
-                  <a href="#">Google maps</a>
-                </li>
-                <li>
-                  <a href="#">Open street map</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-		  -->
-		  
+
           <li class="header-menu">
             <span>Extra</span>
           </li>
@@ -203,14 +161,6 @@
 			  <span class="badge badge-pill badge-primary">UD</span>
             </a>
           </li>
-		  <!--
-          <li>
-            <a href="#">
-              <i class="fa fa-folder"></i>
-              <span>Examples</span>
-            </a>
-          </li>
-		  -->
         </ul>
       </div>
       <!-- sidebar-menu  -->
@@ -237,42 +187,52 @@
   
   <!-- sidebar-wrapper  -->
   
-  <main class="page-content">
-    <div class="container-fluid">
-	<a href="inicio.html">
-      <h2>Lessons</h2>
-	</a> 
-	 
-      <hr>
-     <div class="row">
-	  
-
-	  
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">          
-				<div id="Every_dialogues" class="card rounded-0 p-0 shadow-sm">
-					<img src="images/Every_dialogues/imagem1.png" class="card-img-top rounded-0" alt="Angular pro sidebar">
-					<div class="card-body text-center">
-						<h6 class="card-title">Every Dialogues </h6>
-					</div>
-				</div>          
-			</div>
-			
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">          
-				<div id="Famous_people" class="card rounded-0 p-0 shadow-sm">
-					<img src="images/Famous_people/imagem1.png" class="card-img-top rounded-0" alt="Angular pro sidebar">
-					<div class="card-body text-center">
-						<h6 class="card-title">Famous People </h6>
-					</div>
-				</div>          
-			</div>
-
+ <main class="page-content">
+	<div class="container-fluid">
+		<div class="col-xs-8">
+		<h1>Meu perfil</h1>
+		<hr>
+		<div class="user_pic">
+          <img id="user_image" class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+            alt="User picture">
+			<h2 class="title_alter"> Alterar foto </h2>
+		</div>
+		<span class="border">
+		<div class="user_info">
 		
-     </div>
-      <hr>
-      <div class="row">
+			<span id="user_name" class="user-name">
+            <strong> 
+            	<script> 
+              	$(document).ready(function () {
+                	$.post('http://127.0.0.1/Listarusuario.php', function(retorna) {
+                		$("#user_name").html(retorna);
+              		});
+            	});
 
-      </div>
-    </div>
+             	 </script>
+          	</strong>
+			</span>
+			
+			<span id="user_email" class="user-name">
+            <strong> 
+            	<script> 
+              	$(document).ready(function () {
+                	$.post('http://127.0.0.1/listar_email.php', function(retorna) {
+                		$("#user_email").html(retorna);
+              		});
+            	});
+
+             	 </script>
+          	</strong>
+			</span>
+		</span>
+		</div>
+        
+		
+		
+		</div>
+	</div>
+ </main>
 
   </main>
   <!-- page-content" -->

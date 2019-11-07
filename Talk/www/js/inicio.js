@@ -37,5 +37,9 @@ $("#Every_dialogues").click(function() {
 
 $("#Famous_people").click(function() {
   console.log("passou");
-  $(window.document.location).attr('href',"index.html");
+  $(window.document.location).attr('href',"Famous_people.html");
+});
+
+$(".user-pic").click(function() {
+	$(window.document.location).attr('href', "perfil_user.html");
 });

@@ -1,0 +1,18 @@
+#user_image {
+	width: 300px;
+}
+
+.user_pic {
+	float: left;
+	width: 30%; 
+}
+.user_info  { 
+	margin-left: 55%;
+	font-size: 2.1rem;
+}
+
+.title_alter:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
