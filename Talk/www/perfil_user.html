@@ -204,21 +204,8 @@
             <strong> 
             	<script> 
               	$(document).ready(function () {
-                	$.post('http://127.0.0.1/Listarusuario.php', function(retorna) {
+                	$.post('http://127.0.0.1/listar_info.php', function(retorna) {
                 		$("#user_name").html(retorna);
-              		});
-            	});
-
-             	 </script>
-          	</strong>
-			</span>
-			
-			<span id="user_email" class="user-name">
-            <strong> 
-            	<script> 
-              	$(document).ready(function () {
-                	$.post('http://127.0.0.1/listar_email.php', function(retorna) {
-                		$("#user_email").html(retorna);
               		});
             	});
 
