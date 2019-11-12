@@ -23,3 +23,13 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#468ccf), to(#63b8ee));
   background: -moz-linear-gradient(top,  #468ccf,  #63b8ee);
 }
+
+.container-fluid {
+	width: 100%;
+	height: 100%;
+}
+
+.page-content {
+	width: 100%;
+	height: 100%;
+}

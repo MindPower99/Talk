@@ -1,9 +1,4 @@
-$(document).ready(function(){
-	$("#vocabulary").hide();
-	
-});
-
-$(".btn btn-secondary btn-lg").click(function(){
-	$("#vocabulary").show();
-	console.log("salve");
-});
+function next_content() {
+	console.log("eae");
+	 $(window.document.location).attr('href',"container-fluid c2");
+}
