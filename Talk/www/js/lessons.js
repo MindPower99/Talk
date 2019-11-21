@@ -3,6 +3,10 @@ $(document).ready(function(){
 	$('.c3').hide();
 	$('.c4').hide();
 	$('.c5').hide();
+	$('.c6').hide();
+	$('.c7').hide();
+	$('.c8').hide();
+	$('.c9').hide();
 	
  });
  var count = 0;
