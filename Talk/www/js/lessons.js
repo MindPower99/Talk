@@ -1,3 +1,4 @@
+// Esconder o conteudo enquanto o usuario não passar
 $(document).ready(function(){
 	$('.c2').hide();
 	$('.c3').hide();
@@ -9,6 +10,8 @@ $(document).ready(function(){
 	$('.c9').hide();
 	
  });
+
+// trocando as divs que vão exibir o conteudo das lessons
  var count = 0;
  var a = 1;
 function next_content() {
@@ -24,17 +27,17 @@ function next_content() {
 		var classe =  'c' + a;
 		$('.'+classe).show();
 		console.log(classe);
-		/*if (count > 1) {
-			$('.'+classe).hide();
-			a = a + 1;
-			var classe =  'c' + a;
-			$('.'+classe).show();
-			console.log(classe);
-	
-	}/*
-	var a = $('.c1').attr("value");
-	$('.c1').hide();
-	
-	console.log(a);
-	console.log(count); */
+}
+
+
+function dragstart_handler(ev) {
+  // Adiciona os dados do arraste (drag)
+  ev.dataTransfer.setData("text/plain", ev.target.id);
+  ev.dataTransfer.setData("text/html", "<p>Parágrafo de exemplo</p>");
+  ev.dataTransfer.setData("text/uri-list", "http://developer.mozilla.org");
+}
+
+function change_class_p() {
+	console.log("class");
+	$(this).toggleClass('active');
 }

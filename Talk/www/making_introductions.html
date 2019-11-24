@@ -224,8 +224,8 @@
 	  <div class="c2">
       <h1>Vocabulary</h1>
       <hr>
-          <h2>
-            Fiancé: a person i am engaged to marry <br> 
+          <h3>
+            Fiancé: a person i am engaged to marry <br>
             Neighbor: a person i live beside <br>
             Colleague: a person i work with <br>
             Roommate: a person i share my apartment with <br>
@@ -235,7 +235,7 @@
             Uncle: my mother's brother <br>
             Father-in-law: my husband's father <br>
             Mother-in-law: my husband's mother <br>
-          </h2>
+          </h3>
       <hr>
 	  <div class="card-body text-center">
         <button type="button" class="btn btn-secondary btn-lg" onclick="next_content()">Advance </button>
@@ -252,20 +252,35 @@
       <h1>STORY SCRAMBLE WITH AUDIO </h1>
       <hr>
           <h2>
-            Listen and put the dialogue in the correct order. <br>
-
+            Listen and put the dialogue in the correct order. <br><br>
+            <audio src="audios/Every_Dialogues/dialogue1.mp3" controls>
+            </audio>
+            <br>
+      <hr>
+      <br>
+      <div class="put_in_order" onclick="change_class_p()" draggable="true" ondragstart="dragstart_handler(event);">
 			( 4 ) Amy has told me all about you too. I’ve been looking forward to meeting you for a long time. <br>
-
+      </div>
+      
+      <div class="put_in_order" onclick="change_class_p()" draggable="true" ondragstart="dragstart_handler(event);">
 			( 2 ) Hello, Richard. It’s nice to meet you. I’m Amy’s brother, Charlie. <br>
+      </div>
 
+      <div class="put_in_order" onclick="change_class_p()" draggable="true" ondragstart="dragstart_handler(event);">
 			( 5 ) Well, now that you’ve finally met, why don’t we sit down and have a coffee? <br>
+      </div>
 
+      <div class="put_in_order" onclick="change_class_p()" draggable="true" ondragstart="dragstart_handler(event);">
 			( 6 ) Sounds great. <br>
+      </div>
 
+      <div class="put_in_order" onclick="change_class_p()" draggable="true" ondragstart="dragstart_handler(event);">
 			( 1 ) Charlie, I’d like you to meet my roommate, Richard. <br>
+      </div>
 
+      <div class="put_in_order" onclick="change_class_p()" draggable="true" ondragstart="dragstart_handler(event);">
 			( 3 ) Hi, Charlie. I’m very pleased to meet you. Amy has told me all about you. <br>
-
+      </div>
           </h2>
       <hr>
 	  <div class="card-body text-center">

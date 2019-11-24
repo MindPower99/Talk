@@ -42,3 +42,15 @@ html .page-content {
 .container-fluid {
   display: inline-block;
 }
+
+.active {
+  background-color: #191970;
+}
+
+.put_in_order {
+  background-color: #A9A9A9;
+}
+
+.put_in_order:hover {
+  cursor: pointer;
+}
