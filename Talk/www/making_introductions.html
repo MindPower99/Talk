@@ -6,7 +6,7 @@
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
 	<link rel="stylesheet" type="text/css" href="css/inicio.css">
-	<link rel="stylesheet" type="text/css" href="css/perfil_user.css">
+	<link rel="stylesheet" type="text/css" href="css/lessons.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/lessons.js"></script>
 </head>
@@ -36,11 +36,8 @@
               	$(document).ready(function () {
                 	$.post('http://127.0.0.1/listar_usuario.php', function(retorna) {
                 		$("#conteudo_nome").html(retorna);
-						
               		});
             	});
-				
-				
 
              	 </script>
              
@@ -79,6 +76,7 @@
               <span>Home</span>
             </a> 
           </li>
+          
           <li class="sidebar-dropdown">
             <a href="#">
               <i class="fa fa-tachometer-alt"></i>
@@ -88,12 +86,12 @@
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="Every_Dialogues.html">Every_Dialogues
+                  <a href="Every_Dialogues.html">Every Dialogues
                     <span class="badge badge-pill badge-success">Pro</span>
                   </a>
                 </li>
                 <li>
-                  <a href="Famous_people.html"> Famous_people </a>
+                  <a href="Famous_people.html"> Famous people </a>
                 </li>
                 <li>
                   <a href="#">Lesson 3</a>
@@ -194,44 +192,222 @@
   
   <!-- sidebar-wrapper  -->
   
- <main class="page-content">
-	<div class="container-fluid">
-		<div class="col-xs-8">
-		<h1>Meu perfil</h1>
-		<hr>
-		<div class="user_pic">
-          <img id="user_image" class="img-responsive img-rounded" 
-		  src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
-            alt="User picture">
-			<h2 class="title_alter"> Alterar foto </h2>
-		</div>
-		<span class="border">
-		<div class="user_info">
-		
-			<span id="user_name" class="user-name">
-            <strong> 
-            	<script> 
-              	$(document).ready(function () {
-                	$.post('http://127.0.0.1/listar_info.php', function(retorna) {
-                		$("#user_name").html(retorna);
-              		});
-            	});
-
-             	 </script>
-          	</strong>
-			</span>
-		</span>
-		</div>
+  <main class="page-content">
+    <!----------------------------------------------------------------->
+    <div class="container-fluid">
+      <div class="col-xs-12">
+	  <div class="c1" value="c1">
+      <h1>Every Dialogues</h1>
+      <hr>
+      <h1> Making Introductions </h2>
+	  <hr>
+	  <div class="card-body text-center">
+      <img src="images/Every_dialogues/imagem1.png" class="img-responsive img-rounded-2">
         
-		
-		
-		</div>
-	</div>
- </main>
+          <h2> Amy introduces her roonmate Richard to her brother. <br> Let's view the names of family members and pratice introducing people </h2>
 
+              
+		  
+      </div>
+      <div class="card-body text-center">
+        <button type="button" class="btn btn-secondary btn-lg" onclick="next_content()">Advance </button>
+      </div>
+		
+
+		</div>
+      </div>
+
+    <!----------------------------------------------------------------->
+
+	
+      <div class="col-xs-12">
+	  <div class="c2">
+      <h1>Vocabulary</h1>
+      <hr>
+          <h2>
+            Fiancé: a person i am engaged to marry <br> 
+            Neighbor: a person i live beside <br>
+            Colleague: a person i work with <br>
+            Roommate: a person i share my apartment with <br>
+            Classmate: a person i study with <br>
+            Niece: a daughter of my brother or sister <br>
+            Aunt: my mother's sister <br>
+            Uncle: my mother's brother <br>
+            Father-in-law: my husband's father <br>
+            Mother-in-law: my husband's mother <br>
+          </h2>
+      <hr>
+	  <div class="card-body text-center">
+        <button type="button" class="btn btn-secondary btn-lg" onclick="next_content()">Advance </button>
+      </div>
+		
+	  </div>
+	  </div>
+
+	  <!----------------------------------------------------------------->
+
+	
+      <div class="col-xs-12">
+	  <div class="c3">
+      <h1>STORY SCRAMBLE WITH AUDIO </h1>
+      <hr>
+          <h2>
+            Listen and put the dialogue in the correct order. <br>
+
+			( 4 ) Amy has told me all about you too. I’ve been looking forward to meeting you for a long time. <br>
+
+			( 2 ) Hello, Richard. It’s nice to meet you. I’m Amy’s brother, Charlie. <br>
+
+			( 5 ) Well, now that you’ve finally met, why don’t we sit down and have a coffee? <br>
+
+			( 6 ) Sounds great. <br>
+
+			( 1 ) Charlie, I’d like you to meet my roommate, Richard. <br>
+
+			( 3 ) Hi, Charlie. I’m very pleased to meet you. Amy has told me all about you. <br>
+
+          </h2>
+      <hr>
+	  <div class="card-body text-center">
+        <button type="button" class="btn btn-secondary btn-lg" onclick="next_content()">Advance </button>
+      </div>
+		
+	  </div>
+	  </div>
+	  
+	  <div class="col-xs-12">
+	  <div class="c4">
+      <h1>COMPREHENSION </h1>
+      <hr>
+          
+            <h1> Complete the comprehension questions based on the dialogue. </h1> <br>
+
+			<h1> 1. What does Amy do at the beginning of the conversation? </h1> <br>
+		<h2>
+			A. Amy introduces her brother Charlie to her roommate Richard. <br>
+			B. Amy opens the door for her friend, Richard. <br>
+			C. Amy introduces Richard and Charlie to her roommate. <br>
+			D. Amy describes Richard's personality to Charlie. <br>
+
+
+
+         </h2>
+      <hr>
+	  <div class="card-body text-center">
+        <button type="button" class="btn btn-secondary btn-lg" onclick="next_content()">Advance </button>
+      </div>
+		
+	  </div>
+	  </div>
+	  
+	  <div class="col-xs-12">
+	  <div class="c5">
+      <h1>COMPREHENSION </h1>
+      <hr>
+          
+
+			<h1> 2. How is Richard connected to Amy? </h1> <br>
+		<h2>
+			A. Richard is Amy's classmate. <br>
+			B. Richard is Amy's server. <br>
+			C. Amy is Richard's sister. <br>
+			D. Richard is Amy’s roommate. <br>
+
+         </h2>
+      <hr>
+	  <div class="card-body text-center">
+        <button type="button" class="btn btn-secondary btn-lg" onclick="next_content()">Advance </button>
+      </div>
+		
+	  </div>
+	  </div>
+	  
+	  <div class="col-xs-12">
+	  <div class="c6">
+      <h1>COMPREHENSION </h1>
+      <hr>
+          
+
+			<h1> 3. How is Charlie related to Amy? </h1> <br>
+		<h2>
+			A. They are brother and sister. <br>
+			B. They are best friends. <br>
+			C. They are boyfriend and girlfriend. <br>
+			D. They are coworkers. <br>
+
+         </h2>
+      <hr>
+	  <div class="card-body text-center">
+        <button type="button" class="btn btn-secondary btn-lg" onclick="next_content()">Advance </button>
+      </div>
+		
+	  </div>
+	  </div>
+	  
+	  <div class="col-xs-12">
+	  <div class="c7">
+      <h1>COMPREHENSION </h1>
+      <hr>
+          
+
+			<h1> 4. What are Amy, Charlie, and Richard going to do now?  </h1> <br>
+		<h2>
+			A. meet each other <br>
+			B. have lunch <br>
+			C. have coffee <br>
+			D. go to school <br>
+
+         </h2>
+      <hr>
+	  <div class="card-body text-center">
+        <button type="button" class="btn btn-secondary btn-lg" onclick="next_content()">Advance </button>
+      </div>
+		
+	  </div>
+	  </div>
+	  
+	  <div class="col-xs-12">
+	  <div class="c8">
+      <h1>PHRASE MATCH </h1>
+      <hr>
+          
+
+			<h1> Match the sentences with the same meaning </h1> <br>
+		<h2>
+			I'd like to introduce you to ... <br>
+
+			It's nice to meet you. <br>
+
+			Sounds great. <br>
+
+			Hello. <br>
+
+			... has told me so much about you. <br>
+			
+			<hr>
+			
+			I'd like you to meet ... <br>
+
+			It's a pleasure to meet you. <br>
+
+			That's a good idea. <br>
+
+			How do you do? <br>
+
+			I've heard so much about you <br>
+
+         </h2>
+      <hr>
+	  <div class="card-body text-center">
+        <button type="button" class="btn btn-secondary btn-lg" onclick="next_content()">Advance </button>
+      </div>
+		
+	  </div>
+	  </div>
+	  
   </main>
   <!-- page-content" -->
-</div>
+
 <!-- page-wrapper -->
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>

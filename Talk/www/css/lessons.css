@@ -38,3 +38,7 @@ html .page-content {
 	overflow-y: hidden;
 	overflow-x: hidden;
 }
+
+.container-fluid {
+  display: inline-block;
+}
