@@ -36,8 +36,14 @@ function dragstart_handler(ev) {
   ev.dataTransfer.setData("text/html", "<p>Parágrafo de exemplo</p>");
   ev.dataTransfer.setData("text/uri-list", "http://developer.mozilla.org");
 }
-
+/*
 function change_class_p() {
-	console.log("class");
-	$(this).toggleClass('active');
-}
+	$(".put_in_order").toggleClass('active_class addOrRemove');
+	console.log("pasd");
+	
+} */
+
+function selecionar_classe() {
+  $( "p" ).toggleClass( "active_class" );
+  console.log("passou");
+};

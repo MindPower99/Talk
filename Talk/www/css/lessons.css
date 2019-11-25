@@ -43,14 +43,10 @@ html .page-content {
   display: inline-block;
 }
 
-.active {
+.active_class {
   background-color: #191970;
 }
 
-.put_in_order {
-  background-color: #A9A9A9;
-}
-
-.put_in_order:hover {
-  cursor: pointer;
+.pquestion {
+  color: red;
 }
