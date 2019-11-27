@@ -39,6 +39,11 @@ function dragstart_handler(ev) {
   ev.dataTransfer.setData("text/html", "<p>Parágrafo de exemplo</p>");
   ev.dataTransfer.setData("text/uri-list", "http://developer.mozilla.org");
 }
+
+function back_to_lessons() {
+	$(window.document.location).attr('href',"inicio.html");
+}
+
 /*
 function change_class_p() {
 	$(".put_in_order").toggleClass('active_class addOrRemove');
@@ -46,7 +51,3 @@ function change_class_p() {
 	
 } */
 
-function selecionar_classe() {
-  $( ".container" ).toggleClass( "active_class" );
-  console.log("passou");
-};
