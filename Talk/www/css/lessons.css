@@ -53,11 +53,32 @@ html .page-content {
   padding-left: 35px;
   margin-bottom: 0px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1.9rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+h2.comprehension {
+	margin-top: 5px;
+	padding-top: 20px;
+	padding-left: 15px;
+}
+.comprehension_selected_a {
+	background-color: #191970;
+	color: white;
+}
+.comprehension_selected_b {
+	background-color: #191970;
+	color: white;
+}
+.comprehension_selected_c {
+	background-color: #191970;
+	color: white;
+}
+.comprehension_selected_d {
+	background-color: #191970;
+	color: white;
 }
 
 /* Hide the browser's default radio button */

@@ -257,10 +257,9 @@
           <h2>
             Listen and put the dialogue in the correct order. <br><br>
             <audio src="audios/Every_Dialogues/dialogue1.mp3" controls>
-            </audio>
+            </audio> </h2>
             <br>
-      <hr>
-      <br>
+		<h3>
       <div draggable="true" ondragstart="dragstart_handler(event);">
         <p class="pquestion" onclick="selecionar_classe()">
 			     ( 4 ) Amy has told me all about you too. I’ve been looking forward to meeting you for a long time. <br>
@@ -296,7 +295,7 @@
 			( 3 ) Hi, Charlie. I’m very pleased to meet you. Amy has told me all about you. <br>
     </p>
       </div>
-          </h2>
+          </h3>
       <hr>
 	  <div class="card-body text-center">
 		<button type="button" class="btn btn-secondary btn-lg" > Back </button>
@@ -310,19 +309,28 @@
 	  <div class="c4">
       <h1>COMPREHENSION </h1>
       <hr>
-          
-            <h1> Complete the comprehension questions based on the dialogue. </h1> <br>
-
-			<h1> 1. What does Amy do at the beginning of the conversation? </h1> <br>
-		<h2>
-			A. Amy introduces her brother Charlie to her roommate Richard. <br>
-			B. Amy opens the door for her friend, Richard. <br>
-			C. Amy introduces Richard and Charlie to her roommate. <br>
-			D. Amy describes Richard's personality to Charlie. <br>
-
-
-
-         </h2>
+		 <h2> 3. How is Charlie related to Amy? </h2> <br>
+			
+		<div class="comprehension_a" onclick="comprehension_selected_a()">
+		<h2 class="comprehension">
+			A. Amy introduces her brother Charlie to her roommate Richard. <br><br>
+		</h2>
+		</div>
+		<div class="comprehension_b" onclick="comprehension_selected_b()">
+		<h2 class="comprehension">
+			B. Amy opens the door for her friend, Richard. <br><br>
+		</h2>
+		</div>
+		<div  class="comprehension_c" onclick="comprehension_selected_c()">
+		<h2 class="comprehension">
+			C. Amy introduces Richard and Charlie to her roommate. <br><br>
+		</h2>
+		</div>
+		<div class="comprehension_d" onclick="comprehension_selected_d()">
+		<h2 class="comprehension">
+			D. Amy describes Richard's personality to Charlie. <br><br>
+		</h2>
+        </div>
       <hr>
 	  <div class="card-body text-center">
 		<button type="button" class="btn btn-secondary btn-lg"> Back </button>
@@ -334,29 +342,30 @@
 	  
 	  <div class="col-xs-12">
 	  <div class="c5">
-      <h1>COMPREHENSION </h1>
-	  <h1> 2. How is Richard connected to Amy? </h1> <br>
-      <hr>
-          <label class="container radiobtn1" onclick="selecionar_classe()">A. Richard is Amy's classmate.
-		  <input type="radio" checked="checked" name="radio">
-		  <span class="checkmark"></span>
-			</label>
-			<label class="container radiobtn2" onclick="selecionar_classe()">B. Richard is Amy's server. 
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-			</label>
-			<label class="container radiobtn3" onclick="selecionar_classe()">C. Amy is Richard's sister.
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-			</label>
-			<label class="container radiobtn4" onclick="selecionar_classe()">D. Richard is Amy’s roommate.
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-			</label>
+      <h1>COMPREHENSION </h1><hr>
+	  <h2> 2. How is Richard connected to Amy? </h2> <br>
+			
+		<div class="comprehension_a" onclick="comprehension_selected_a()">
+		<h2 class="comprehension">
+			A. Richard is Amy's classmate. <br><br>
+		</h2>
+		</div>
+		<div class="comprehension_b" onclick="comprehension_selected_b()">
+		<h2 class="comprehension">
+			B. Richard is Amy's server.  <br><br>
+		</h2>
+		</div>
+		<div class="comprehension_c" onclick="comprehension_selected_c()">
+		<h2 class="comprehension">
+			C. Amy is Richard's sister. <br><br>
+		</h2>
+		</div>
+		<div class="comprehension_d" onclick="comprehension_selected_d()">
+		<h2 class="comprehension">
+			D. Richard is Amy’s roommate. <br><br>
+		</h2>
+        </div>
 
-			
-			
-		<h2>
 			 <br>
 			<br>
 			 <br>
@@ -378,14 +387,28 @@
       <hr>
           
 
-			<h1> 3. How is Charlie related to Amy? </h1> <br>
-		<h2>
-			A. They are brother and sister. <br>
-			B. They are best friends. <br>
-			C. They are boyfriend and girlfriend. <br>
-			D. They are coworkers. <br>
-
-         </h2>
+		<h2> 3. How is Charlie related to Amy? </h2> <br>
+			
+		<div class="comprehension_a" onclick="comprehension_selected_a()">
+		<h2 class="comprehension">
+			A. They are brother and sister. <br><br>
+		</h2>
+		</div>
+		<div class="comprehension_b" onclick="comprehension_selected_b()">
+		<h2 class="comprehension">
+			B. They are best friends. <br><br>
+		</h2>
+		</div>
+		<div class="comprehension_c" onclick="comprehension_selected_c()">
+		<h2 class="comprehension">
+			C. They are boyfriend and girlfriend. <br><br>
+		</h2>
+		</div>
+		<div class="comprehension_d" onclick="comprehension_selected_d()">
+		<h2 class="comprehension">
+			D. They are coworkers. <br><br>
+		</h2>
+         </div>
       <hr>
 	  <div class="card-body text-center">
 		<button type="button" class="btn btn-secondary btn-lg"> Back </button>
@@ -399,15 +422,20 @@
 	  <div class="c7">
       <h1>COMPREHENSION </h1>
       <hr>
-          
 
-			<h1> 4. What are Amy, Charlie, and Richard going to do now?  </h1> <br>
-		<h2>
-			A. meet each other <br>
-			B. have lunch <br>
-			C. have coffee <br>
-			D. go to school <br>
-
+		 <h2> 3. How is Charlie related to Amy? </h2> <br>
+			
+		<h2 class="comprehension_a" onclick="comprehension_selected_a()">
+			A. meet each other <br><br>
+		</h2>
+		<h2 class="comprehension_b" onclick="comprehension_selected_b()">
+			B. have lunch <br><br>
+		</h2>
+		<h2  class="comprehension_c" onclick="comprehension_selected_c()">
+			C. have coffee <br><br>
+		</h2>
+		<h2  class="comprehension_d" onclick="comprehension_selected_d()">
+			D. go to school <br><br>
          </h2>
       <hr>
 	  <div class="card-body text-center">

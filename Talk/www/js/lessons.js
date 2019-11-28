@@ -18,6 +18,10 @@ function next_content() {
 	/*console.log("eae");
 	var div = $('.c2');
 	$('.container-fluid').html(div);*/
+	$(".comprehension_a").removeClass("comprehension_selected_a");
+	$(".comprehension_d").removeClass("comprehension_selected_d");
+	$(".comprehension_b").removeClass("comprehension_selected_b");
+	$(".comprehension_c").removeClass("comprehension_selected_c");
 	count++;
 		var classe = 'c';
 		var classe = 'c' + a;
@@ -44,6 +48,30 @@ function back_to_lessons() {
 	$(window.document.location).attr('href',"inicio.html");
 }
 
+function comprehension_selected_a() {
+	$(".comprehension_a").toggleClass("comprehension_selected_a");
+	$(".comprehension_d").removeClass("comprehension_selected_d");
+	$(".comprehension_b").removeClass("comprehension_selected_b");
+	$(".comprehension_c").removeClass("comprehension_selected_c");
+}
+function comprehension_selected_b() {
+	$(".comprehension_b").toggleClass("comprehension_selected_b");
+	$(".comprehension_a").removeClass("comprehension_selected_a");
+	$(".comprehension_d").removeClass("comprehension_selected_d");
+	$(".comprehension_c").removeClass("comprehension_selected_c");
+}
+function comprehension_selected_c() {
+	$(".comprehension_c").toggleClass("comprehension_selected_c");
+	$(".comprehension_a").removeClass("comprehension_selected_a");
+	$(".comprehension_b").removeClass("comprehension_selected_b");
+	$(".comprehension_d").removeClass("comprehension_selected_d");
+}
+function comprehension_selected_d() {
+	$(".comprehension_d").toggleClass("comprehension_selected_d");
+	$(".comprehension_a").removeClass("comprehension_selected_a");
+	$(".comprehension_b").removeClass("comprehension_selected_b");
+	$(".comprehension_c").removeClass("comprehension_selected_c");
+}
 /*
 function change_class_p() {
 	$(".put_in_order").toggleClass('active_class addOrRemove');
