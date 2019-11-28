@@ -21,12 +21,15 @@ function next_content() {
 	count++;
 		var classe = 'c';
 		var classe = 'c' + a;
-		console.log(classe);
+		
+		function armazena() {
+			console.log(classe);
+		}
 		$('.'+classe).hide();
 		a = a + 1;
 		var classe =  'c' + a;
 		$('.'+classe).show();
-		console.log(classe);
+		//console.log(classe);
 }
 
 
@@ -44,6 +47,6 @@ function change_class_p() {
 } */
 
 function selecionar_classe() {
-  $( "p" ).toggleClass( "active_class" );
+  $( ".container" ).toggleClass( "active_class" );
   console.log("passou");
 };
