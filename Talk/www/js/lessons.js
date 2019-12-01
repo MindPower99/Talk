@@ -72,6 +72,18 @@ function comprehension_selected_d() {
 	$(".comprehension_b").removeClass("comprehension_selected_b");
 	$(".comprehension_c").removeClass("comprehension_selected_c");
 }
+
+new Vue({
+  el: 'body',
+  data: {
+    list: ['Foo', 'Bar', 'Baz', 'bebe']
+  },
+  methods: {
+    onUpdate: function (event) {
+      this.list.splice(event.newIndex, 0, this.list.splice(event.oldIndex, 1)[0])
+    }
+  }
+});
 /*
 function change_class_p() {
 	$(".put_in_order").toggleClass('active_class addOrRemove');

@@ -9,8 +9,13 @@
 	<link rel="stylesheet" type="text/css" href="css/lessons.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/lessons.js"></script>
-	<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
-	<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+  <!-- SortableJS -->
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.4.2/Sortable.min.js"></script>  
+<script src="https://npmcdn.com/vue-sortable@latest"></script>
+
 	<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
 </head>
 <body>
@@ -316,29 +321,9 @@
       </div>
           </h3> -->
 		  
-		  	  <script>
-				$( function() {
-				$( "#sortable" ).sortable();
-				$( "#sortable" ).disableSelection();
-				} );
-				</script>
-
-			
-			<ul id="sortable">
-			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
-			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
-			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
-			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
-			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
-			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
-			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
-			</ul>
-      <hr>
-	  <div class="card-body text-center">
-		<button type="button" class="btn btn-secondary btn-lg" > Back </button>
-        <button type="button" class="btn btn-secondary btn-lg" onclick="next_content()">Advance </button>
-      </div>
-		
+			<ul class="list-group" v-sortable="{ onUpdate: onUpdate }">
+    <li class="list-group-item" v-for="item in list">{{ item }}</li>
+  </ul>
 	  </div>
 	  </div>
 	  
