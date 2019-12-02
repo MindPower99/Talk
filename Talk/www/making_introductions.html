@@ -28,7 +28,7 @@
       </div>
       <div class="sidebar-header">
         <div class="user-pic">
-          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+          <img class="img-responsive img-rounded" src="images/user/me.jpg"
             alt="User picture">
         </div>
         <div class="user-info">
@@ -136,16 +136,10 @@
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="#">Friend </a>
+                  <a href="#">Ana </a>
                 </li>
                 <li>
-                  <a href="#">Friend </a>
-                </li>
-                <li>
-                  <a href="#">Friend </a>
-                </li>
-                <li>
-                  <a href="#">Friend </a>
+                  <a href="#">Evelyn </a>
                 </li>
               </ul>
             </div>
@@ -249,7 +243,7 @@
 	  </div>
 	  </div>
 
-	  <!----------------------------------------------------------------->
+	  <!----------------------------------------------------------------
 
 	
     <div class="col-xs-12">
@@ -306,12 +300,22 @@
 		
 	  </div>
 	  </div>
+
+  -->
 	  
 	  <div class="col-xs-12">
-	  <div class="c4">
+	  <div class="c3">
+      <h1>STORY SCRAMBLE WITH AUDIO </h1>
+      <hr>
+          <h2>
+            Listen and answer the questions <br><br>
+            <audio src="audios/Every_Dialogues/dialogue1.mp3" controls>
+            </audio> </h2>
+            <br>
+    <h3>
       <h1>COMPREHENSION </h1>
       <hr>
-		 <h2> 3. How is Charlie related to Amy? </h2> <br>
+		 <h2> 1. What does Amy do at the beginning of the conversation ? </h2> <br>
 			
 		<div class="comprehension_a" onclick="comprehension_selected_a()">
 		<h2 class="comprehension">
@@ -343,8 +347,16 @@
 	  </div>
 	  
 	  <div class="col-xs-12">
-	  <div class="c5">
-      <h1>COMPREHENSION </h1><hr>
+	  <div class="c4">
+            
+      <h1>COMPREHENSION </h1>
+      <hr>
+      <audio src="audios/Every_Dialogues/dialogue1.mp3" controls>
+            </audio> </h2>
+            <br>
+            <br>
+            
+
 	  <h2> 2. How is Richard connected to Amy? </h2> <br>
 			
 		<div class="comprehension_a" onclick="comprehension_selected_a()">
@@ -367,12 +379,6 @@
 			D. Richard is Amy’s roommate. <br><br>
 		</h2>
         </div>
-
-			 <br>
-			<br>
-			 <br>
-			 <br>
-
          </h2>
       <hr>
 	  <div class="card-body text-center">
@@ -384,12 +390,15 @@
 	  </div>
 	  
 	  <div class="col-xs-12">
-	  <div class="c6">
+	  <div class="c5">
+
       <h1>COMPREHENSION </h1>
       <hr>
-          
-
-		<h2> 3. How is Charlie connected to Amy? </h2> <br>
+            <audio src="audios/Every_Dialogues/dialogue1.mp3" controls>
+            </audio> </h2>
+            <br>
+            <br>
+		<h2> 3. How is Charlie related to Amy? </h2> <br>
 			
 		<div class="comprehension_a" onclick="comprehension_selected_a()">
 		<h2 class="comprehension">
@@ -421,11 +430,16 @@
 	  </div>
 	  
 	  <div class="col-xs-12">
-	  <div class="c7">
+	  <div class="c6">
       <h1>COMPREHENSION </h1>
       <hr>
 
-		 <h2> 3. How is Charlie related to Amy? </h2> <br>
+            <audio src="audios/Every_Dialogues/dialogue1.mp3" controls>
+            </audio> </h2>
+            <br>
+            <br>
+
+		 <h2> 4. What are Amy, Charlie, and Richard goind to do now ? </h2> <br>
 			
 		<div class="comprehension_a" onclick="comprehension_selected_a()">
 		<h2 class="comprehension">
@@ -456,6 +470,7 @@
 	  </div>
 	  </div>
 	  
+    <!--
 	  <div class="col-xs-12">
 	  <div class="c8">
       <h1>PHRASE MATCH </h1>
@@ -495,7 +510,56 @@
 		
 	  </div>
 	  </div>
-	  
+  -->
+	  <div class="col-xs-12">
+    <div class="c7">
+      <div class="card-body text-center">
+      <h1>Resultado </h1>
+      <hr>
+      <img src="https://www.imagensanimadas.com/data/media/1117/trofeu-imagem-animada-0007.gif" border="0" alt="trofeu-imagem-animada-0007" />
+
+      <h1> 3 acertos de 4 questões </h1>
+      </div>
+    <button type="button" class="collapsible">Gabarito </button>
+      <div class="content">
+      <h2> 1. 1. What does Amy do at the beginning of the conversation ?</h2>
+      <p class="gabarito resposta_certa"> A. Amy introduces her brother Charlie to her roommate Richard. </p>
+
+      <h2> 2. How is Richard connected to Amy? </h2>
+      <p class="gabarito resposta_certa">D. Amy describes Richard's personality to Charlie. </p>
+
+      <h2> 3. How is Charlie related to Amy? </h2>
+      <p class="gabarito resposta_certa"> A. Amy introduces her brother Charlie to her roommate Richard. </p>
+      <p class="gabarito resposta_errada">B. Amy opens the door for her friend, Richard. </p>
+
+      <h2> 4. What are Amy, Charlie, and Richar going to do now ? </h2>
+      <p class="gabarito resposta_certa">C. Amy introduces Richard and Charlie to her roommate.</p>
+
+     </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+      <hr>
+    
+    <div class="card-body text-center">
+      <button type="button" class="btn btn-secondary btn-lg" onclick="repeat_lesson()">Repeat Lesson </button>
+        <button type="button" class="btn btn-secondary btn-lg" onclick="back_to_lessons()">Finish </button>
+      </div>
+    </div>
+  </div>
   </main>
   <!-- page-content" -->
 

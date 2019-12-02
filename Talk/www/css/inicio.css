@@ -181,7 +181,14 @@ body {
   left: -330px;
   z-index: 999;
   }
-
+  h2 {
+    color: black;
+  }
+.user-pic {
+  float: left;
+  width: 300px; 
+  height: 150px;
+}
 
 
 }

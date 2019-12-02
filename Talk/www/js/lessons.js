@@ -23,19 +23,23 @@ function next_content() {
 	$(".comprehension_b").removeClass("comprehension_selected_b");
 	$(".comprehension_c").removeClass("comprehension_selected_c");
 	count++;
+	console.log(count);
+	if (count == 2) {
+		if($(".comprehension_selected_d").toggleClass) {
+			console.log("certo");
+		}
+	}
 		var classe = 'c';
 		var classe = 'c' + a;
 		
-		function armazena() {
-			console.log(classe);
-		}
 		$('.'+classe).hide();
 		a = a + 1;
 		var classe =  'c' + a;
 		$('.'+classe).show();
 		//console.log(classe);
-}
+		console.log(resposta);
 
+}
 
 function dragstart_handler(ev) {
   // Adiciona os dados do arraste (drag)
@@ -48,42 +52,66 @@ function back_to_lessons() {
 	$(window.document.location).attr('href',"inicio.html");
 }
 
+function repeat_lesson() {
+	$(window.document.location).attr('href',"making_introductions.html");
+}
+
+function repeat_lesson_famous() {
+	$(window.document.location).attr('href',"Famous_people.html");
+}
+
+var resposta = '';
+
+function ajustes() {
+	$(window.document.location).attr('href',"ajustes.html");
+}
+
+
 function comprehension_selected_a() {
 	$(".comprehension_a").toggleClass("comprehension_selected_a");
 	$(".comprehension_d").removeClass("comprehension_selected_d");
 	$(".comprehension_b").removeClass("comprehension_selected_b");
 	$(".comprehension_c").removeClass("comprehension_selected_c");
+	function resposta(resp) {
+		var resp = 'a';
+		console.log(resp);
+	}
+	resposta(resposta);
 }
 function comprehension_selected_b() {
 	$(".comprehension_b").toggleClass("comprehension_selected_b");
 	$(".comprehension_a").removeClass("comprehension_selected_a");
 	$(".comprehension_d").removeClass("comprehension_selected_d");
 	$(".comprehension_c").removeClass("comprehension_selected_c");
+	function resposta(resp) {
+		var resp = 'b';
+		console.log(resp);
+	}
+	resposta(resposta);
 }
 function comprehension_selected_c() {
 	$(".comprehension_c").toggleClass("comprehension_selected_c");
 	$(".comprehension_a").removeClass("comprehension_selected_a");
 	$(".comprehension_b").removeClass("comprehension_selected_b");
 	$(".comprehension_d").removeClass("comprehension_selected_d");
+	function resposta(resp) {
+		var resp = 'c';
+		console.log(resp);
+	}
+	resposta(resposta);
 }
 function comprehension_selected_d() {
 	$(".comprehension_d").toggleClass("comprehension_selected_d");
 	$(".comprehension_a").removeClass("comprehension_selected_a");
 	$(".comprehension_b").removeClass("comprehension_selected_b");
 	$(".comprehension_c").removeClass("comprehension_selected_c");
+	function resposta(resp) {
+		var resp = 'd';
+		console.log(resp);
+	}
+	resposta(resposta);
 }
 
-new Vue({
-  el: 'body',
-  data: {
-    list: ['Foo', 'Bar', 'Baz', 'bebe']
-  },
-  methods: {
-    onUpdate: function (event) {
-      this.list.splice(event.newIndex, 0, this.list.splice(event.oldIndex, 1)[0])
-    }
-  }
-});
 /*
 function change_class_p() {
 	$(".put_in_order").toggleClass('active_class addOrRemove');

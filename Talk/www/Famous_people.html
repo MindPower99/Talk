@@ -26,7 +26,7 @@
       </div>
       <div class="sidebar-header">
         <div class="user-pic">
-          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+          <img class="img-responsive img-rounded" src="images/user/me.jpg"
             alt="User picture">
         </div>
         <div class="user-info">
@@ -133,16 +133,10 @@
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="#">Friend </a>
+                  <a href="#">Ana </a>
                 </li>
                 <li>
-                  <a href="#">Friend </a>
-                </li>
-                <li>
-                  <a href="#">Friend </a>
-                </li>
-                <li>
-                  <a href="#">Friend </a>
+                  <a href="#">Evelyn </a>
                 </li>
               </ul>
             </div>
@@ -252,14 +246,14 @@
       <h1>READ & LISTEN </h1>
       <hr>
 	  
-		<h2> Read and listen to an article about Albert Einstein. </h2>
+		<h3> Read and listen to an article about Albert Einstein. </h3>
 			
 			<audio src="audios/Famous_people/dialogue1.mp3" controls> </audio>
 		
 		<h3>Albert Einstein was a world-famous physicist.
 			Einstein was born in Ulm, Germany, in 1879, but he grew up in Munich. As a young boy, he did not do well in school. He liked to study math, science, and philosophy at home by himself.
 
-			In 1895, Einstein’s family moved to Milan, Italy. He stayed behind to go to school, but he soon left to join his family. Again, he studied at home on his own. But, in 1896, on his second try, he became a student at the Swiss Federal Institute of Technology. He studied math and physics, and he graduated in 1900.
+			In 1895, Einstein’s family moved to Milan, Italy. He stayed behind to go to school, but he soon left to join his family. Again, he studied at home on his own. He studied math and physics, and he graduated in 1900.
 
 			In 1901, Einstein got a job in the patent office in Bern, Switzerland. When he wasn’t at work, he did research on physics. In 1903, he married Mileva Maric.
 
@@ -292,7 +286,7 @@
 		
 		<div class="true_or_false">
 		  <label class="label_true_or_false">
-			<input type="radio" class="option-input radio" name="example" checked />
+			<input type="radio" class="option-input radio" name="example" />
 			True
 		  </label>
 		  <label class="label_true_or_false">
@@ -320,7 +314,7 @@
 		
 		<div class="true_or_false">
 		  <label class="label_true_or_false">
-			<input type="radio" class="option-input radio" name="example" checked />
+			<input type="radio" class="option-input radio" name="example" />
 			True
 		  </label>
 		  <label class="label_true_or_false">
@@ -349,7 +343,7 @@
 		
 		<div class="true_or_false">
 		  <label class="label_true_or_false">
-			<input type="radio" class="option-input radio" name="example" checked />
+			<input type="radio" class="option-input radio" name="example" />
 			True
 		  </label>
 		  <label class="label_true_or_false">
@@ -378,7 +372,7 @@
 		
 		<div class="true_or_false">
 		  <label class="label_true_or_false">
-			<input type="radio" class="option-input radio" name="example" checked />
+			<input type="radio" class="option-input radio" name="example"  />
 			True
 		  </label>
 		  <label class="label_true_or_false">
@@ -407,7 +401,7 @@
 		
 		<div class="true_or_false">
 		  <label class="label_true_or_false">
-			<input type="radio" class="option-input radio" name="example" checked />
+			<input type="radio" class="option-input radio" name="example" />
 			True
 		  </label>
 		  <label class="label_true_or_false">
@@ -426,6 +420,7 @@
 	  </div>
 	  
 	  
+	  <!--
 	  <div class="col-xs-12">
 	  <div class="c9">
 		<h1> MATCHING </h1>
@@ -469,14 +464,68 @@
       </div>
 		
 	  </div>
-	  </div>
+	  </div> -->
 	  
-	
-	
+	<div class="col-xs-12">
+    <div class="c9">
+      <div class="card-body text-center">
+      <h1>Resultado </h1>
+      <hr>
+      <img src="https://www.imagensanimadas.com/data/media/1117/trofeu-imagem-animada-0007.gif" border="0" alt="trofeu-imagem-animada-0007" />
+
+      <h1> 3 acertos de 5 questões </h1>
+      </div>
+    <button type="button" class="collapsible">Gabarito </button>
+      <div class="content">
+      <h2> 1. Albert Einstein was an excellent student when he was in school.</h2>
+      <p class="gabarito resposta_certa"> False </p>
+
+      <h2> 2. Einstein preferred to study by himself. </h2>
+      <p class="gabarito resposta_certa"> True </p>
+
+      <h2> 3. Einstein studied mathematics. </h2>
+      <p class="gabarito resposta_certa"> True </p>
+      <p class="gabarito resposta_errada">False - your answer </p>
+
+      <h2>  4. Einstein was a professor of philosophy. </h2>
+      <p class="gabarito resposta_certa">False </p>
+      <p class="gabarito resposta_errada">True - your answer </p>
+
+      <h2>  5. Einstein believed in war. </h2>
+      <p class="gabarito resposta_certa">False </p>
+
+
+
+     </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+      <hr>
+    
+    <div class="card-body text-center">
+        <button type="button" class="btn btn-secondary btn-lg" onclick="repeat_lesson_famous()">Repeat Lesson </button>
+        <button type="button" class="btn btn-secondary btn-lg" onclick="back_to_lessons()">Finish </button>
+      </div>
     </div>
+  </div>
+	
+    
   </main>
   <!-- page-content" -->
-</div>
+
 <!-- page-wrapper -->
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>

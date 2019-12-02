@@ -6,9 +6,12 @@
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
 	<link rel="stylesheet" type="text/css" href="css/inicio.css">
-	<link rel="stylesheet" type="text/css" href="css/lessons.css">
+	<link rel="stylesheet" type="text/css" href="css/perfil_user.css">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/lessons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -26,7 +29,7 @@
       </div>
       <div class="sidebar-header">
         <div class="user-pic">
-          <img class="img-responsive img-rounded" src="images/user/me.jpg"
+          <img class="img-rounded" src="images/user/me.jpg"
             alt="User picture">
         </div>
         <div class="user-info">
@@ -36,8 +39,11 @@
               	$(document).ready(function () {
                 	$.post('http://127.0.0.1/listar_usuario.php', function(retorna) {
                 		$("#conteudo_nome").html(retorna);
+						
               		});
             	});
+				
+				
 
              	 </script>
              
@@ -78,19 +84,19 @@
           </li>
           <li class="sidebar-dropdown">
             <a href="#">
-              <i class="fa fa-tachometer-alt"></i>
+              <i class="fa fa-graduation-cap"></i>
               <span>Lessons</span>
               <span class="badge badge-pill badge-warning">New</span>
             </a>
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="Every_Dialogues.html">Every Dialogues
+                  <a href="Every_Dialogues.html">Every_Dialogues
                     <span class="badge badge-pill badge-success">Pro</span>
                   </a>
                 </li>
                 <li>
-                  <a href="Famous_people.html"> Famous people </a>
+                  <a href="Famous_people.html"> Famous_people </a>
                 </li>
                 <li>
                   <a href="#">Lesson 3</a>
@@ -133,16 +139,10 @@
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="#">Friend </a>
+                  <a href="#">Ana </a>
                 </li>
                 <li>
-                  <a href="#">Friend </a>
-                </li>
-                <li>
-                  <a href="#">Friend </a>
-                </li>
-                <li>
-                  <a href="#">Friend </a>
+                  <a href="#">Evelyn </a>
                 </li>
               </ul>
             </div>
@@ -191,38 +191,20 @@
   
   <!-- sidebar-wrapper  -->
   
-  <main class="page-content">
-    <!----------------------------------------------------------------->
-    <div class="container-fluid">
-      <h1>Every Dialogues</h1>
-      <hr>
-      <h2> These Dialogues and short conversations are about the language of everyday tasks such as grocery shopping or going to a restaurant. </h2>
-      <hr>
-      <div class="row">
+  <main class="page-content"> 
   
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-          <a href="making_introductions.html">
-	         <div class="card rounded-0 p-0 shadow-sm">
-            <img src="images/Every_dialogues/imagem1.png" class="card-img-top rounded-0" alt="Every dialogues">
-            <div class="card-body text-center">
-              <h6 class="card-title">Making Introductions </h6>
-            </div>
-          </div> 
-        </a>
-        </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-		  <a href="Making_a_grocery_list.html">
-           <div class="card rounded-0 p-0 shadow-sm">
-            <img src="images/Every_dialogues/imagem2.png" class="card-img-top rounded-0" alt="Every Dialogues">
-            <div class="card-body text-center">
-              <h6 class="card-title">Making a Grocery List </h6>
-            </div>
-          </div> 
-		  </a>
-        </div>
-    </div>
-  </div>
-	  
+<div class="checkbox">
+  <label>
+    <input type="checkbox" data-toggle="toggle">
+    Option one is enabled
+  </label>
+</div>
+<div class="checkbox disabled">
+  <label>
+    <input type="checkbox" disabled data-toggle="toggle">
+    Option two is disabled
+  </label>
+</div>
   </main>
   <!-- page-content" -->
 

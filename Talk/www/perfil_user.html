@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/perfil_user.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/lessons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -26,7 +27,7 @@
       </div>
       <div class="sidebar-header">
         <div class="user-pic">
-          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+          <img class="img-rounded" src="images/user/me.jpg"
             alt="User picture">
         </div>
         <div class="user-info">
@@ -81,7 +82,7 @@
           </li>
           <li class="sidebar-dropdown">
             <a href="#">
-              <i class="fa fa-tachometer-alt"></i>
+              <i class="fa fa-graduation-cap"></i>
               <span>Lessons</span>
               <span class="badge badge-pill badge-warning">New</span>
             </a>
@@ -136,16 +137,10 @@
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="#">Friend </a>
+                  <a href="#">Ana </a>
                 </li>
                 <li>
-                  <a href="#">Friend </a>
-                </li>
-                <li>
-                  <a href="#">Friend </a>
-                </li>
-                <li>
-                  <a href="#">Friend </a>
+                  <a href="#">Evelyn </a>
                 </li>
               </ul>
             </div>
@@ -194,9 +189,11 @@
   
   <!-- sidebar-wrapper  -->
   
- <main class="page-content">
+ <main class="page-content"> 
+  <!--
 	<div class="container-fluid">
-		<div class="col-xs-8">
+		<div class="col-xs-8"> -->
+      <!--
 		<h1>Meu perfil</h1>
 		<hr>
 		<div class="user_pic">
@@ -218,20 +215,39 @@
             	});
 
              	 </script>
+
           	</strong>
 			</span>
+      </div> -->
+      <div class="card">
+  <img  class="img-responsive" src="images/user/me.jpg" alt="Gabriel">
+  <h1><span id="user_name" class="user-name"><script> 
+                $(document).ready(function () {
+                  $.post('http://127.0.0.1/listar_info.php', function(retorna) {
+                    $("#user_name").html(retorna);
+                  });
+              });
+
+               </script></span></h1>
+  <p class="title"> Talk English School Student</p>
+  <a href="#"><i class="fa fa-trophy"></i> Every Dialogues - Making Introductions </a> 
+  <a href="#"><i class="fa fa-trophy"></i> Famous people - Albert Einstein </a> 
+    <br>
+  <br>
+  <br>
+  <p><button>Change Foto</button></p>
+
+</div>
 		</span>
 		</div>
         
 		
 		
 		</div>
-	</div>
- </main>
 
   </main>
   <!-- page-content" -->
-</div>
+
 <!-- page-wrapper -->
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
